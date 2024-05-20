@@ -1,0 +1,18 @@
+<p>alumnos works!</p>
+@for(alumno of alumnos;track alumno.matricula){
+
+<a
+  routerLink="/alumno/{{ alumno.matricula }}"
+  routerLinkActive="active"
+  ariaCurrentWhenActive="page"
+  >{{ alumno.nombre }}</a
+><br />
+
+}
+
+<a
+  routerLink="/alumno/124"
+  routerLinkActive="active"
+  ariaCurrentWhenActive="page"
+  >Alumno</a
+><br />
